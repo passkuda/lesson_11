@@ -1,0 +1,65 @@
+@import url(resset.css);
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.header__title{
+	text-align: center;
+	font-size: 33px;
+	font-weight: 700;
+	padding: 20px 0;
+}
+
+main{
+	position: relative;
+}
+.main__title{
+	text-align: right;
+	font-size: 22px;
+	color: red;
+	padding: 20px 0;
+}
+
+
+.main__text{
+	font-size: 18px; 
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.link{
+	border: 1px solid #000;
+	padding: 20px 15px;
+	background-color: blue;
+	color: #fff;
+	text-align: center;
+}
+
+#linkright{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#botomleft{
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+}
+
+#botomright{
+	position: absolute;
+	bottom: -100px;
+	right: 0;
+}
+
+#linkleftt{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

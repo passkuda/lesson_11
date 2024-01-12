@@ -1,0 +1,135 @@
+@import url(resset.css);
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header{
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.header__titile{
+	text-align: center;
+	font-size: 33px;
+	color: blue;
+	text-shadow: 2px 3px 4px red;
+	line-height: 1.3;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+.menu__list{
+	display: flex;
+}
+
+.menu__list li:not(:last-child){
+	margin-right: 15px;
+}
+
+.menu__list li{
+	background-color: rgba(143, 143, 240, 0.356);
+	padding: 10px 30px;
+	border-radius: 5px;
+	position: relative;
+}
+
+
+
+.menu__list li:hover{
+	background-color: rgba(143, 143, 240, 0.856);
+	color: #fff;
+}
+
+.menu__link{
+	font-size: 18px;
+}
+
+
+.menu__arow::after{
+	content: ">";
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: red;
+	text-align: center;
+	padding: 1px 0;
+	font-weight: 700;
+	position: absolute;
+	transform: rotate(90deg) translate(-50%);
+	top: 50%;
+	right: 0px;
+}
+
+
+.menu__arow:hover::after{
+	color: blue;
+	transform: rotate(90deg) translate(-50%) scale(1.4);
+}
+
+
+.sub-menu{
+	position: absolute;
+	top: 95%;
+	left: 0;
+	padding-top: 25px;
+}
+
+.sub-menu__list li:not(:last-child){
+	margin:0 0 20px 0;
+}
+
+.sub-menu__list li{
+	position: relative;
+}
+
+.enkrinemt{
+	padding-left: 30px;
+	position: absolute;
+	top: 0;
+	left: 95%;
+}
+
+
+.enkrinemt__list{
+	width: 170px;
+	padding: 10px;
+}
+
+.enkrinemt__list{
+	
+	counter-reset: test;
+	
+}
+
+.enkrinemt__list li::before{
+	content: counter(test);
+	counter-increment: test;
+	margin-right: 10px;
+	color: red;
+}
+
+
+.enkrinemt,
+.sub-menu-wraper{
+	opacity: 0;
+	overflow: hidden;
+	transition: all 300ms;
+}
+
+.sub-menu__list_active:hover .enkrinemt{
+	opacity: 1;
+	overflow: visible;
+	transition: all 300ms;
+}
+
+
+.menu__arow:hover .sub-menu-wraper{
+	opacity: 1;
+	overflow: visible;
+	transition: all 300ms;
+}

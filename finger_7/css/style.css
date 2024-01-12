@@ -1,0 +1,47 @@
+@import url(resset.css);
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header{
+	margin-bottom: 20px;
+}
+
+
+.header__title,
+.main__title{
+	text-align: center;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+
+.main__test{
+	border: 5px dashed #000;
+	height: 500px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: rgb(153, 153, 237);
+	position: relative;
+}
+
+
+
+.main__pozition{
+	border: 5px solid #000;
+	display: inline-block;
+	padding: 20px 10px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	width: 250px;
+	text-align: center;
+	font-weight: 700;
+}

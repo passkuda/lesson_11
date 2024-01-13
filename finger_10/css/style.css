@@ -1,0 +1,76 @@
+
+@import url(resset.css);
+
+
+
+header{
+	padding: 20px 0;
+	margin-bottom: 50px;
+}
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__title{
+	font-weight: 700;
+	font-size: 33px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.main__body{
+	border: 1px solid #000;
+	padding: 10px;
+	font-weight: 22px;
+	line-height: 1.2;
+	position: relative;
+	
+}
+
+.main__body > div{
+	padding: 10px;
+	text-align: center;
+}
+
+.main__body :not(:last-child){
+	margin-bottom: 10px;
+}
+
+
+.main__static{
+	background-color: green;
+	color: #fff;
+}
+
+.main__relative{
+	position: relative;
+	top: -20px;
+	background-color: blue;
+	color: #fff;
+	left: -10px;
+}
+
+.main__absolute{
+	position: absolute;
+	top: 500px;
+	right: 0;
+	z-index: 2;
+	background-color: red;
+}
+
+.main__fixed{
+	position: fixed;
+	background-color: purple;
+	top: 0px;
+	left: 0px;
+
+}
+.main__sticky{
+	background-color: palegreen;
+	position: sticky;
+	top: 100px;
+	padding: 10px;
+}

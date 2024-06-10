@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>form</title>
+</head>
+<body>
+	<div class="form">
+		<div class="form__video">
+			<video  src="/video/video.webm"></video>
+			<video preload="auto" loop autoplay muted>
+				<source src="/video/video.mp4" type="video/mp4">
+				<source src="video/video.webm" type="video/webm">
+			</video>
+		</div>
+		<div class="form__body">
+			<h3 class="form__title">Запис на консультацію</h3>
+			<div class="form__subtitle">
+				Напишіть будь ласка запит, який вас турбує
+			</div>
+			<form class="form__custom" action="#" method="post" enctype="multipart/form-data">
+				<input type="tell" class="form__userphone" placeholder="Телефон/телеграм" tabindex="1" name="userphone" value="">
+				<input type="text" class="form__username" placeholder="Ваше ім'я" tabindex="2" name="username">
+				<textarea class="form__complaints" placeholder="Питання, яке вас хвилює." tabindex="3" name="complaints"></textarea>
+				<button class="form__button" tabindex="4" type="submit">Надіслати запит</button>
+			</form>
+		</div>
+	</div>
+	<div class="test">
+		<ul class="test_list list">
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+			<li>Бла - бла - бла - бу- бу -бу</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -869,13 +869,6 @@ main {
   }
 }
 
-@media (max-width: 550px) {
-  .advantages__body {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 @media (max-width: 400px) {
   .header__call-button {
     text-align: center;
@@ -943,8 +936,8 @@ main {
 
 @media (max-width: 47.99875em) {
   .advantages__body {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .header__call-button {

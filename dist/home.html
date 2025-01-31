@@ -2,196 +2,319 @@
 <html lang="en">
 
 <head>
-	<title>GHM - tractors</title>
+	<title>home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241229171048">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250131125354">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<div id="preloader">
+		<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="Loading..."></picture>
+	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a class="header__logo" href="#"><picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="logo"></picture></a>
-				<a href="catalog.html" class="header__catalog">catalog</a>
-				<a href="#about" class="header__contact">Contacts</a>
+				<!-- Номер телефона -->
+				<div class="header__contact">
+					<span class="header__tell">+0380 66 272 2380</span>
+					<a href="tel:+0380662722380" class="header__call-button" aria-label="Позвонить по номеру +0380662722380">
+						Call us
+					</a>
+				</div>
+
+				<!-- Логотип -->
+				<div class="header__logo">
+					<a href="#" aria-label="На главную страницу">
+						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="Логотип компании"></picture>
+					</a>
+				</div>
+
+				<!-- Каталог / Бургер-меню -->
+				<div class="header__menu">
+					<!-- Каталог для больших экранов -->
+					<span id="hovid" class="menu__text">Catalog</span>
+
+					<!-- Бургер-иконка для мобильных -->
+
+
+					<!-- Выпадающее меню -->
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
 			</div>
 		</header>
 		<main class="page">
-			<div class="fullscrin">
-				<div class="fullscrin__body">
-					<h1 class="fullscrin__title"><span>Minimum</span> size - <span>maximum</span> possibilities</h1>
-					<picture><source srcset="img/fullscrin/ful1.webp" type="image/webp"><img src="img/fullscrin/ful1.jpeg" alt="tractors"></picture>
+			<section class="fullscreen">
+				<div class="fullscreen__body">
+					<div class="fullscreen__slider-overlay slider-overlay">
+						<h1 class="slider-overlay__title">Mini-equipment for big tasks! Reliable. Profitable. Fast</h1>
+						<div class="slider-overlay__text">
+							Mini tractors and excavators for work in the field and at construction sites. We deliver all over
+							the
+							country!"
+						</div>
+						<a href="#" class="slider-overlay__btn">Get a consultation</a>
+						<a href="#" class="slider-overlay__arrow"> <picture><source srcset="img/icons/arrow2.webp" type="image/webp"><img src="img/icons/arrow2.png" alt=""></picture> </a>
+					</div>
+					<!-- Оболонка слайдера -->
+					<div class="fullscreen__slider swiper">
+						<div class="fullscreen__wrapper swiper-wrapper">
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/01.webp" type="image/webp"><img src="img/arts/01.jpeg" alt="swiper-slide"></picture>
+							</div>
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/02.webp" type="image/webp"><img src="img/arts/02.jpg" alt="swiper-slide"></picture>
+							</div>
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/03.webp" type="image/webp"><img src="img/arts/03.webp" alt="swiper-slide"></picture>
+							</div>
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/04.webp" type="image/webp"><img src="img/arts/04.jpg" alt="swiper-slide"></picture>
+							</div>
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/05.webp" type="image/webp"><img src="img/arts/05.jpg" alt="swiper-slide"></picture>
+							</div>
+							<div class="fullscreen__slide swiper-slide">
+								<picture><source srcset="img/arts/06.webp" type="image/webp"><img src="img/arts/06.jpg" alt="swiper-slide"></picture>
+							</div>
+						</div>
+					</div>
 				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title">What do we offer?</h2>
+					<div class="advantages__body">
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>Warranty and service</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/06.webp" type="image/webp"><img src="img/advantages/06.png" alt="service"></picture>
+								</div>
+								<p>
+									Official warranty and professional service. We work only with proven spare parts.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>Shipping all over Australia</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/01.webp" type="image/webp"><img src="img/advantages/01.png" alt="Shipping"></picture>
+								</div>
+								<p>
+									Fast and reliable delivery to any point in the country. We will organize the transportation
+									of
+									equipment directly to you.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>The best prices for equipment</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/02.webp" type="image/webp"><img src="img/advantages/02.png" alt="prices"></picture>
+								</div>
+								<p>
+									Direct deliveries from manufacturers allow us to offer competitive prices without unnecessary
+									markups.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>Spare parts and accessories</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/03.webp" type="image/webp"><img src="img/advantages/03.png" alt="accessories"></picture>
+								</div>
+								<p>
+									In stock and on order – everything necessary for repair and modernization of equipment.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>Leasing and convenient payment</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/04.webp" type="image/webp"><img src="img/advantages/04.png" alt="accessories"></picture>
+								</div>
+								<p>
+									Flexible payment options: leasing, installments, payment in parts. We will find a solution
+									for
+									each client.
+								</p>
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								<h3>Consultation before purchase</h3>
+								<div class="advantages__image">
+									<picture><source srcset="img/advantages/05.webp" type="image/webp"><img src="img/advantages/05.png" alt="accessories"></picture>
+								</div>
+								<p>
+									We help you choose the equipment for your tasks. We will explain what is right for you!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="test">
+				<p>
+					test <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum velit
+					alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero, sunt
+					facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem cumque
+					molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum magni
+					unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate obcaecati
+					reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam! Ipsam ad
+					amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum impedit
+					quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
+					dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab culpa
+					porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
+					perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
+					consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde quod
+					harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
+					architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita nemo
+					alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab tempore
+					in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
+					consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe blanditiis.
+					Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam! Ullam iste
+					facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis! Architecto
+					deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit molestiae
+					assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et officiis
+					molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam aliquam,
+					architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam nostrum
+					eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
+					aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem asperiores
+					id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid eligendi
+					dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam quis
+					recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi illum
+					cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio nisi
+					incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit sed
+					rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
+					Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
+					perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
+					architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum consequuntur
+					recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti amet,
+					excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque quo
+					dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa perferendis
+					maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
+				</p>
+				<p>
+					test <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum velit
+					alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero, sunt
+					facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem cumque
+					molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum magni
+					unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate obcaecati
+					reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam! Ipsam ad
+					amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum impedit
+					quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
+					dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab culpa
+					porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
+					perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
+					consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde quod
+					harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
+					architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita nemo
+					alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab tempore
+					in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
+					consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe blanditiis.
+					Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam! Ullam iste
+					facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis! Architecto
+					deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit molestiae
+					assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et officiis
+					molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam aliquam,
+					architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam nostrum
+					eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
+					aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem asperiores
+					id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid eligendi
+					dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam quis
+					recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi illum
+					cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio nisi
+					incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit sed
+					rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
+					Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
+					perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
+					architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum consequuntur
+					recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti amet,
+					excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque quo
+					dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa perferendis
+					maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
+				</p>
+				<p>
+					test <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum velit
+					alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero, sunt
+					facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem cumque
+					molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum magni
+					unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate obcaecati
+					reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam! Ipsam ad
+					amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum impedit
+					quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
+					dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab culpa
+					porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
+					perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
+					consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde quod
+					harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
+					architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita nemo
+					alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab tempore
+					in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
+					consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe blanditiis.
+					Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam! Ullam iste
+					facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis! Architecto
+					deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit molestiae
+					assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et officiis
+					molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam aliquam,
+					architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam nostrum
+					eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
+					aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem asperiores
+					id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid eligendi
+					dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam quis
+					recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi illum
+					cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio nisi
+					incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit sed
+					rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
+					Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
+					perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
+					architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum consequuntur
+					recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti amet,
+					excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque quo
+					dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa perferendis
+					maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
+				</p>
 			</div>
-			<section class="cards">
-				<div class="cards__container">
-					<div class="cards__row">
-						<div class="cards__items">
-							<div class="cards__item">
-								<div class="cards__body">
-									<h3 class="cards__name">Repair</h3>
-									<img src="img/icons/repair.svg" alt="repair">
-									<div class="cards__detal">more details</div>
-								</div>
-								<div class="cards__text">
-									<div class="cards__info">
-										<h3 class="cards__title">Fast and high quality</h3>
-										<p class="cards__describe">Professional equipment repair with quality guarantee. We offer fast and reliable solutions for all types of equipment purchased from us.</p>
-										<p class="cards__describe">Maintenance and repair of equipment at the highest level! We guarantee fast repair using original spare parts so that your equipment works like new again.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards__items">
-							<div class="cards__item">
-								<div class="cards__body">
-									<h3 class="cards__name">Rent</h3>
-									<div class="cards__time"><span></span><span></span></div>
-									<div class="cards__detal">more details</div>
-								</div>
-								<div class="cards__text">
-									<div class="cards__info">
-										<h3 class="cards__title">It's profitable with us</h3>
-										<p class="cards__describe">Our equipment for rent is a convenient and profitable solution for performing any construction or agricultural tasks.</p>
-										<p class="cards__describe">We provide modern equipment for rent on flexible terms: from short-term to long-term contracts.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards__items">
-							<div class="cards__item">
-								<div class="cards__body">
-									<h3 class="cards__name">Service</h3>
-									<img id="small" src="img/icons/obs.svg" alt="repair">
-									<div class="cards__detal">more details</div>
-								</div>
-								<div class="cards__text">
-									<div class="cards__info">
-										<h3 class="cards__title">Technical Department</h3>
-										<p class="cards__describe">Our specialists offer a full range of equipment repair services, including diagnostics, replacement of components and equipment setup. Trust experienced craftsmen for long-term operation of your equipment.</p>
-										<p class="cards__describe">Trust the maintenance of your equipment to professionals and enjoy uninterrupted operation.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards__items">
-							<div class="cards__item">
-								<div class="cards__body">
-									<h3 class="cards__name">Consulting and training</h3>
-									<img id="tre" src="img/icons/trea.svg" alt="repair">
-									<div class="cards__detal">more details</div>
-								</div>
-								<div class="cards__text">
-									<div class="cards__info">
-										<h3 class="cards__title">Training</h3>
-										<p class="cards__describe">We help you choose equipment for your tasks and teach you how to use it correctly to achieve maximum efficiency.</p>
-										<p class="cards__describe">We train you and your employees in all the intricacies of operating equipment to improve efficiency and reliability.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="partner">
-				<div class="partner__container">
-					<h2 class="partner__title">Minimum price for mini tractors in your region</h2>
-					<div class="partner__item">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="logo"></picture>
-					</div>
-				</div>
-			</section>
-			<section id="about" class="other">
-				<div class="other__container">
-					<div data-tabs class="tabs">
-						<nav data-tabs-titles class="tabs__navigation">
-							<button type="button" class="tabs__title _tab-active">About Us</button>
-							<button type="button" class="tabs__title">Services</button>
-							<button type="button" class="tabs__title">Guarantees</button>
-							<button type="button" class="tabs__title">Сontacts</button>
-							<button type="button" class="tabs__title">Reviews</button>
-						</nav>
-						<div data-tabs-body class="tabs__content">
-							<div class="tabs__body">
-								<p>
-									Our company specializes in the sale, rental and maintenance of construction and agricultural equipment. We help our clients find effective solutions for any task.
-								</p>
-								<p>
-									Having worked in the market for many years, we have earned trust thanks to high-quality service, individual approach and a wide range of equipment.
-								</p>
-								<p>
-									We strive not only to provide equipment, but also to share knowledge: we consult, train and support our clients at all stages of cooperation.
-								</p>
-								<p>
-									Our goal is to be your reliable partner in business development, offering modern technologies and professional service.
-								</p>
-							</div>
-							<div class="tabs__body">
-								<p>
-									We offer a full range of services, including equipment rental, repair and maintenance, to ensure your equipment is always ready to work.
-								</p>
-								<p>
-									Our team of professionals provides quality support, quick solutions to any technical issues and access to the necessary spare parts.
-								</p>
-								<p>
-									Each service is aimed at minimizing the downtime of your equipment and increasing the efficiency of its operation.
-								</p>
-								<p>
-									We care about your convenience, offering flexible rental terms, prompt service and qualified consultations.
-								</p>
-							</div>
-							<div class="tabs__body">
-								<p>
-									The guarantee is our responsibility to you: we are always ready to promptly resolve any issues related to the operation of the equipment.
-								</p>
-								<p>
-									We provide a guarantee for all equipment and work performed so that you can be confident in the quality and reliability of our services.
-								</p>
-								<p>
-									We guarantee that the equipment meets all stated specifications and ensures its uninterrupted operation for the specified period.
-								</p>
-							</div>
-							<div class="tabs__body">
-								<p>
-									Address: We are located at [Your address], easy to get to from anywhere in the city.
-								</p>
-								<p>
-									Phone: Call us at [Your Phone Number] for advice or questions.
-								</p>
-								<p>
-									Email: Please write to us at [your email] and we will respond to your message promptly.
-								</p>
-								<p>
-									Opening hours: We work from [opening hours 24/7 ], always ready to help you!
-								</p>
-							</div>
-							<div class="tabs__body">
-								<p>
-									Alexey K., entrepreneur: "I applied for a mini-excavator rental, everything went quickly and without problems. The equipment was in excellent condition, and the company's employees helped with the selection and delivery. Very satisfied!
-								</p>
-								<p>
-									Donald T, farmer: "I've been using their services for several years now. I bought a mini tractor and regularly have it serviced. Everything is always clear, professional and with attention to detail."
-								</p>
-								<p>
-									Naydzhel G., builder: "I needed to urgently repair equipment, and only this company was able to help in the shortest possible time. The work was done perfectly, the prices are reasonable. I recommend!"
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241229171048"></script>
+	<script src="js/app.min.js?_v=20250131125354"></script>
 </body>
 
 </html>

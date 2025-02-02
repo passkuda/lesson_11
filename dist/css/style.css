@@ -285,7 +285,7 @@ body::after {
 }
 
 #preloader img {
-  width: 100px;
+  width: 200px;
   -webkit-animation: pulse 1.5s infinite ease-in-out;
           animation: pulse 1.5s infinite ease-in-out;
 }
@@ -691,6 +691,144 @@ main {
   }
 }
 
+.about-us {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fff;
+}
+
+.about-us__container {
+  text-align: center;
+}
+
+.about-us__title {
+  font-size: 2.375rem;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+}
+
+.about-us__subtitle {
+  line-height: 1.5;
+  color: #5a5959;
+  margin-bottom: 3.75rem;
+  font-size: 1.25rem;
+}
+
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.about-us__left {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-us__left .about-us__text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.875rem;
+}
+
+.about-us__left .about-us__text > p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.about-us__left .about-us__text p {
+  position: relative;
+  padding-left: 1.875rem;
+}
+
+.no-webp .about-us__left .about-us__text p::before{
+  background: url("../img/icons/chek.png") center/cover no-repeat; }
+
+.about-us__left .about-us__text p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.about-us__left .about-us__contacts {
+  text-align: center;
+}
+
+.about-us__left .about-us__contacts .about-us__contact-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+}
+
+.about-us__left .about-us__contacts .about-us__adress {
+  margin-bottom: 1.5625rem;
+}
+
+.about-us__left .about-us__contacts .about-us__contact-links :not(:last-child) {
+  margin-right: 0.625rem;
+}
+
+.about-us__left .about-us__contacts .about-us__contact-links a.contact-link {
+  display: inline-block;
+  padding: 0.3125rem 0.5rem;
+  font-size: 1rem;
+  color: #007bff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.about-us__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.about-us__left.visible {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.about-us__right.fade-in {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -823,11 +961,50 @@ main {
   .slider-overlay__arrow {
     margin-bottom: 3.125rem;
   }
+
+  .about-us {
+    padding-top: 5rem;
+  }
+
+  .about-us {
+    padding-bottom: 5rem;
+  }
+
+  .about-us__title {
+    font-size: 2.375rem;
+  }
+
+  .about-us__title {
+    margin-bottom: 3.125rem;
+  }
+
+  .about-us__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .about-us__subtitle {
+    margin-bottom: 3.5rem;
+  }
+
+  .about-us__content {
+    gap: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
   .menu__text {
     display: none;
+  }
+
+  .about-us__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about-us__right {
+    min-width: 100%;
   }
 }
 
@@ -931,6 +1108,34 @@ main {
 
   .slider-overlay__arrow {
     margin-bottom: 6.25rem;
+  }
+
+  .about-us {
+    padding-top: 3.125rem;
+  }
+
+  .about-us {
+    padding-bottom: 3.125rem;
+  }
+
+  .about-us__title {
+    font-size: 1.5rem;
+  }
+
+  .about-us__title {
+    margin-bottom: 1.875rem;
+  }
+
+  .about-us__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .about-us__subtitle {
+    margin-bottom: 1.875rem;
+  }
+
+  .about-us__content {
+    gap: 0.9375rem;
   }
 }
 
@@ -1192,6 +1397,90 @@ main {
       margin-bottom: calc(6.25rem + -3.125 * (100vw - 20rem) / 90);
     }
 }
+
+@supports (padding-top: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem )) {
+    .about-us {
+      padding-top: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem )) {
+    .about-us {
+      padding-top: calc(3.125rem + 1.875 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (padding-bottom: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem )) {
+    .about-us {
+      padding-bottom: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 3.125rem , 2.7083333333rem  +  2.0833333333vw , 5rem )) {
+    .about-us {
+      padding-bottom: calc(3.125rem + 1.875 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 1.3055555556rem  +  0.9722222222vw , 2.375rem )) {
+    .about-us__title {
+      font-size: clamp( 1.5rem , 1.3055555556rem  +  0.9722222222vw , 2.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.3055555556rem  +  0.9722222222vw , 2.375rem )) {
+    .about-us__title {
+      font-size: calc(1.5rem + 0.875 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.5972222222rem  +  1.3888888889vw , 3.125rem )) {
+    .about-us__title {
+      margin-bottom: clamp( 1.875rem , 1.5972222222rem  +  1.3888888889vw , 3.125rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.5972222222rem  +  1.3888888889vw , 3.125rem )) {
+    .about-us__title {
+      margin-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0972222222rem  +  0.1388888889vw , 1.25rem )) {
+    .about-us__subtitle {
+      font-size: clamp( 1.125rem , 1.0972222222rem  +  0.1388888889vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0972222222rem  +  0.1388888889vw , 1.25rem )) {
+    .about-us__subtitle {
+      font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.5138888889rem  +  1.8055555556vw , 3.5rem )) {
+    .about-us__subtitle {
+      margin-bottom: clamp( 1.875rem , 1.5138888889rem  +  1.8055555556vw , 3.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.5138888889rem  +  1.8055555556vw , 3.5rem )) {
+    .about-us__subtitle {
+      margin-bottom: calc(1.875rem + 1.625 * (100vw - 20rem) / 90);
+    }
+}
+
+@supports (gap: clamp( 0.9375rem , 0.5902777778rem  +  1.7361111111vw , 2.5rem )) {
+    .about-us__content {
+      gap: clamp( 0.9375rem , 0.5902777778rem  +  1.7361111111vw , 2.5rem );
+    }
+}
+
+@supports not (gap: clamp( 0.9375rem , 0.5902777778rem  +  1.7361111111vw , 2.5rem )) {
+    .about-us__content {
+      gap: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 90);
+    }
+}
 }
 
 @media (max-width: 767.98px) and (min-width: 110em) {
@@ -1242,9 +1531,22 @@ main {
     background: #8b470c;
     color: #fff;
   }
+
+  .about-us__left .about-us__text p:hover::before {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  .about-us__left .about-us__contacts .about-us__contact-links a.contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
 }
 
 .webp .menu__text::after{ background: url(../img/icons/arrow.webp) center/contain no-repeat; }
+
+.webp .about-us__left .about-us__text p::before{ background: url(../img/icons/chek.webp) center/cover no-repeat; }
 
 @media (max-width: 767.98px){
 

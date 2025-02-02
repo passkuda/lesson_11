@@ -3202,6 +3202,18 @@
         window.addEventListener("scroll", handleScroll);
         handleScroll();
     }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const items = document.querySelectorAll("[data-animate]");
+        function handleScroll() {
+            items.forEach((item => {
+                const rect = item.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                if (rect.top < windowHeight - 50) item.classList.add(item.getAttribute("data-animate")); else item.classList.remove(item.getAttribute("data-animate"));
+            }));
+        }
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250202133015">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250206182411">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 
 				<!-- Логотип -->
 				<div class="header__logo">
-					<a href="#" aria-label="На главную страницу">
+					<a href="home.html" aria-label="На главную страницу">
 						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="Логотип компании"></picture>
 					</a>
 				</div>
@@ -45,21 +45,11 @@
 					<!-- Выпадающее меню -->
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">All products</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Mini Tractors</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Mini Excavators</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Any of your options can be added</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -77,7 +67,7 @@
 							country!"
 						</div>
 						<a href="#" class="slider-overlay__btn">Get a consultation</a>
-						<a href="#" class="slider-overlay__arrow"> <picture><source srcset="img/icons/arrow2.webp" type="image/webp"><img src="img/icons/arrow2.png" alt=""></picture> </a>
+						<a href="#advantages" class="slider-overlay__arrow"> <picture><source srcset="img/icons/arrow2.webp" type="image/webp"><img src="img/icons/arrow2.png" alt=""></picture> </a>
 					</div>
 					<!-- Оболонка слайдера -->
 					<div class="fullscreen__slider swiper">
@@ -104,11 +94,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="advantages">
+			<section id="advantages" class="advantages">
 				<div class="advantages__container">
 					<h2 class="advantages__title">What do we offer?</h2>
 					<div class="advantages__body">
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>Warranty and service</h3>
 								<div class="advantages__image">
@@ -119,7 +109,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>Shipping all over Australia</h3>
 								<div class="advantages__image">
@@ -132,7 +122,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>The best prices for equipment</h3>
 								<div class="advantages__image">
@@ -144,7 +134,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>Spare parts and accessories</h3>
 								<div class="advantages__image">
@@ -155,7 +145,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>Leasing and convenient payment</h3>
 								<div class="advantages__image">
@@ -168,7 +158,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item" data-animate="scale-up">
 							<div class="advantages__text">
 								<h3>Consultation before purchase</h3>
 								<div class="advantages__image">
@@ -226,227 +216,237 @@
 					</div>
 				</div>
 			</section>
-			<div class="test">
-				<div class="test__container">
-					<div class="test2">
-						<p>
-							test <br>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum
-							velit
-							alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero,
-							sunt
-							facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem
-							cumque
-							molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum
-							magni
-							unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate
-							obcaecati
-							reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam!
-							Ipsam ad
-							amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum
-							impedit
-							quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
-							dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab
-							culpa
-							porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
-							perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
-							consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde
-							quod
-							harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
-							architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita
-							nemo
-							alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab
-							tempore
-							in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
-							consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe
-							blanditiis.
-							Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam!
-							Ullam iste
-							facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis!
-							Architecto
-							deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit
-							molestiae
-							assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et
-							officiis
-							molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam
-							aliquam,
-							architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam
-							nostrum
-							eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
-							aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem
-							asperiores
-							id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid
-							eligendi
-							dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam
-							quis
-							recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi
-							illum
-							cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio
-							nisi
-							incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit
-							sed
-							rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
-							Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
-							perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
-							architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum
-							consequuntur
-							recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti
-							amet,
-							excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque
-							quo
-							dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa
-							perferendis
-							maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
-						</p>
-						<p>
-							test <br>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum
-							velit
-							alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero,
-							sunt
-							facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem
-							cumque
-							molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum
-							magni
-							unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate
-							obcaecati
-							reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam!
-							Ipsam ad
-							amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum
-							impedit
-							quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
-							dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab
-							culpa
-							porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
-							perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
-							consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde
-							quod
-							harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
-							architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita
-							nemo
-							alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab
-							tempore
-							in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
-							consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe
-							blanditiis.
-							Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam!
-							Ullam iste
-							facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis!
-							Architecto
-							deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit
-							molestiae
-							assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et
-							officiis
-							molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam
-							aliquam,
-							architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam
-							nostrum
-							eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
-							aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem
-							asperiores
-							id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid
-							eligendi
-							dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam
-							quis
-							recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi
-							illum
-							cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio
-							nisi
-							incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit
-							sed
-							rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
-							Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
-							perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
-							architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum
-							consequuntur
-							recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti
-							amet,
-							excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque
-							quo
-							dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa
-							perferendis
-							maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
-						</p>
-						<p>
-							test <br>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores assumenda laboriosam harum
-							velit
-							alias, perferendis autem voluptatem amet. Maiores fuga quae ducimus reiciendis quasi culpa libero,
-							sunt
-							facilis. Quis consequatur tempora soluta tenetur dicta, sapiente cupiditate quas dolore autem
-							cumque
-							molestias consectetur voluptatum, aspernatur illum sed omnis inventore recusandae debitis earum
-							magni
-							unde ea possimus laboriosam? Recusandae laudantium, deserunt minus, iure vitae sint voluptate
-							obcaecati
-							reiciendis quas non modi officiis omnis temporibus rem aliquam consequuntur, expedita numquam!
-							Ipsam ad
-							amet est quidem ea itaque dolore quo maiores? Libero quod consectetur molestias eaque illo, eum
-							impedit
-							quisquam earum voluptatem aliquid, dolores soluta quam amet harum architecto rem dolor voluptatibus
-							dolore corporis, repudiandae delectus aliquam? Perferendis quae obcaecati repudiandae natus ab
-							culpa
-							porro architecto mollitia rerum ipsum sit numquam, odit fugiat totam eos, maiores quas quidem vel
-							perspiciatis aut incidunt officia suscipit veritatis? Doloremque nisi veniam, deleniti tempora
-							consequuntur quis. Laudantium exercitationem iusto et vero harum. Natus pariatur repellendus unde
-							quod
-							harum sequi, voluptates libero eius ex voluptatem molestiae! Sequi, unde inventore? Veniam, saepe
-							architecto rem commodi culpa, deserunt quidem tempore illum dicta facilis blanditiis illo expedita
-							nemo
-							alias pariatur tenetur eos eaque quod ullam velit eum consequuntur? Earum vel nulla voluptas ab
-							tempore
-							in corporis magni veniam voluptatem, dolorem cupiditate ipsum quisquam similique labore, maiores
-							consequuntur exercitationem placeat, minima aspernatur repellat unde explicabo. Ipsum, saepe
-							blanditiis.
-							Non ex officia quaerat! Deserunt eius, beatae dolore nemo nam ab in? Saepe, suscipit quisquam!
-							Ullam iste
-							facilis non quas velit delectus ipsa. Cupiditate dolor dicta soluta nostrum perspiciatis!
-							Architecto
-							deserunt ut asperiores repellendus distinctio pariatur numquam laudantium, odio a suscipit
-							molestiae
-							assumenda alias eveniet voluptatum libero non quam totam sequi quod nihil atque! Natus vel et
-							officiis
-							molestiae excepturi ullam adipisci quae tenetur alias eligendi, accusantium iure illum. Veniam
-							aliquam,
-							architecto natus totam dicta maiores incidunt illo perferendis accusantium numquam facilis magnam
-							nostrum
-							eos voluptatibus similique animi officiis officia cum iusto. Maiores ratione deserunt numquam sint
-							aspernatur, praesentium doloribus molestias, dignissimos atque veritatis cum alias ut quidem
-							asperiores
-							id corrupti dicta consequuntur. Ullam quisquam, iure neque quae eos obcaecati rerum aliquid
-							eligendi
-							dolor, voluptatibus explicabo sint? Amet ipsam sapiente dicta eum officia cum dolorum sequi numquam
-							quis
-							recusandae sint laudantium ullam unde nam eligendi velit, architecto laboriosam nisi excepturi
-							illum
-							cupiditate natus. Quo, facere debitis unde libero voluptatum vitae nulla consequatur distinctio
-							nisi
-							incidunt provident corporis exercitationem veritatis iste esse consectetur, deleniti modi suscipit
-							sed
-							rerum! Voluptatum, tenetur dolorum minus perspiciatis deleniti sit tempore placeat magnam ullam?
-							Consequuntur, totam corporis dolorem aperiam minus iste possimus quae excepturi, asperiores quaerat
-							perferendis est quibusdam mollitia nisi, tempore ab atque itaque? Dignissimos, animi? Perspiciatis
-							architecto blanditiis nihil ullam consectetur a dolorem, dignissimos incidunt vitae rerum
-							consequuntur
-							recusandae illum laudantium. Cupiditate culpa magnam ipsa eum, nobis esse fugiat dolorem corrupti
-							amet,
-							excepturi cumque nulla temporibus dolores autem odit laudantium mollitia eius, dignissimos atque
-							quo
-							dolorum rerum ad. Nostrum nulla, itaque obcaecati possimus atque asperiores quae, totam culpa
-							perferendis
-							maiores quam illum corporis iste, quasi accusamus voluptates doloribus.
-						</p>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title">Feedback from our clients</h2>
+					<div class="review__list">
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Terminator T800</div>
+								<div class="review__date">January 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">
+								"I'm back... for a mini-tractor! 🚜"
+								This equipment is more powerful than my endoskeleton! I took it to clear the rubble after a
+								small shootout with the resistance. It works flawlessly, does not break, unlike me after an
+								encounter with liquid metal.
+								The delivery was faster than I ran after John Connor. Warranty? Only people need it. But it's
+								still nice to know that if something happens, they will help me.
+								I recommend it! I would buy more, but Skynet does not approve.
+								Verdict: 10 out of 10. I will order again.
+								Asta la vista, competitors! 😎🔥
+							</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">John Connor 🏍️</div>
+								<div class="review__date">March 2048</div>
+							</div>
+							<div class="review__rating" data-rating="5"></div>
+							<div class="review__text">"Now I don't need the Terminator, I have this mini-tractor!"
+								Powerful, fast, even survived a chase with the T-1000. And most importantly - it doesn't try to
+								kill me!
+								I recommend it! 😎👍</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Volodymyr Zelenskyy</div>
+								<div class="review__date">Январь 2022</div>
+							</div>
+							<div class="review__rating" data-rating="3"></div>
+							<div class="review__text">
+								"When I first got behind the wheel of the mini-tractor, I thought, 'This thing is so powerful!'
+								I bought it for the country house, and now I almost feel sorry for the neighbors — I’m so fast
+								they can’t keep up with me. The tractor is a real gem for everyone! And the best part is, now I
+								have my own little kingdom, and I’m the king of it."
+							</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="2"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="4"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+						<div class="review__item">
+							<div class="review__header">
+								<div class="review__name">Иван Петров</div>
+								<div class="review__date">Январь 2025</div>
+							</div>
+							<div class="review__rating" data-rating="5"></div>
+							<div class="review__text">Очень доволен покупкой мини-трактора!...</div>
+						</div>
+					</div>
+					<!-- Форма для отзывов -->
+					<div class="review-form">
+						<h3 class="review-form__title">Оставьте свой отзыв</h3>
+						<form action="#" method="post">
+							<label for="name" class="review-form__label">Ваше имя:</label>
+							<input type="text" id="name" name="name" class="review-form__input" required>
+							<div class="review-form__select-container">
+								<label for="rating" class="review-form__label">Оценка:</label>
+								<select id="rating" name="rating" class="review-form__select" required>
+									<option value="1">1 звезда</option>
+									<option value="2">2 звезды</option>
+									<option value="3">3 звезды</option>
+									<option value="4">4 звезды</option>
+									<option selected value="5">5 звезд</option>
+								</select>
+							</div>
+							<label for="review-text" class="review-form__label">Ваш отзыв:</label>
+							<textarea id="review-text" name="review-text" class="review-form__textarea" required></textarea>
+							<button type="submit" class="review-form__button">Отправить отзыв</button>
+						</form>
 					</div>
 				</div>
-			</div>
-
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<h2 class="faq__title">Frequently Asked Questions</h2>
+					<div class="faq__list">
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">How to place an order?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									Select the necessary equipment from the catalog and contact us via phone, messengers, or
+									email. Our managers will assist you, clarify the details, and process the order.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">What payment methods are available?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									We accept payments by bank cards (Visa, MasterCard), bank transfer and offer convenient
+									installment or leasing options.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">How much does delivery cost?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									The cost of delivery depends on your region and the dimensions of the equipment. You can
+									calculate the exact price at the stage of placing an order or check with the manager.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">Is it possible to buy equipment in installments or on lease?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									Yes, we offer flexible purchase terms: installments and leasing. Details can be clarified
+									with the manager.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">What is the warranty on the equipment?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									We provide an official manufacturer's warranty. The warranty period depends on the model and
+									ranges from 12 to 24 months.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">What to do if the equipment breaks down?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									Contact us and we will help with repairs. Depending on the case, warranty service, repairs in
+									our service center or ordering spare parts are possible.
+								</p>
+							</div>
+						</div>
+						<div class="faq__item" data-animate="scale-up">
+							<button class="faq__question">Where to find spare parts and accessories?<span class="faq__icon"></span></button>
+							<div class="faq__answer">
+								<p>
+									We offer a wide range of spare parts and accessories for your equipment. You can order them
+									from us, and we will arrange delivery as soon as possible.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, voluptates, nulla
+									perspiciatis fuga ea ullam laudantium iusto excepturi tempore sapiente itaque? Porro quis quo
+									commodi esse? Esse sed excepturi labore.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__logo">
+					<picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.webp" alt="Compani logo"></picture>
+				</div>
+				<div class="footer__contacts">
+					<p class="footer__address">📍 61 Mein Street, Scarborough, Brisbane, QLD, Australia</p>
+					<p class="footer__phone">📞 <a href="tel:+61488732755">+61 4 8873 2755</a></p>
+					<p class="footer__email">✉ <a href="mailto:example@email.com">example@email.com</a></p>
+					<div class="footer__links">
+						<a href="https://wa.me/61XXXXXXXXX" class="footer__link">📲 WhatsApp</a> |
+						<a href="https://t.me/username" class="footer__link">🔵 Telegram</a>
+					</div>
+				</div>
+				<div class="footer__cta">
+					<a href="catalog.html" class="footer__button">Catalog</a>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250202133015"></script>
+	<script src="js/app.min.js?_v=20250206182411"></script>
 
 
 </body>

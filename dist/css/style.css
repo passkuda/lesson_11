@@ -1253,7 +1253,7 @@ main {
 }
 
 .header-bucgraund {
-  background-color: rgb(58, 155, 172);
+  background-color: rgb(13, 73, 83);
 }
 
 .header__logo-left {
@@ -1266,6 +1266,7 @@ main {
       justify-self: center;
   font-size: 1.25rem;
   font-weight: 600;
+  color: red;
 }
 
 .header__search {
@@ -1396,6 +1397,8 @@ main {
   width: 1200px;
   overflow: hidden;
   height: 650px;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
 }
 
 .gallery__slide {

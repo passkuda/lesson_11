@@ -1,0 +1,324 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f3eb;
+  margin: 0;
+  padding: 0;
+  color: #1c1c1c;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.logo {
+  font-size: 20px;
+ 
+}
+
+.logo__plus {
+  color: #f29f05;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  
+
+
+}
+
+.scan-text {
+  padding-right: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.scan-icon {
+  width: 20px;
+  height: 20px;
+
+
+}
+
+.scan-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+  padding: 12px;
+}
+
+.doc-card {
+  background: #e5e2cd;
+  border-radius: 10px;
+  border: 1px solid #9c9882;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doc-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+ 
+}
+
+.doc-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  
+}
+
+.doc-card__icon{
+
+min-width: 30px;
+height: 40px;
+margin-left: 10px;
+}
+
+
+.doc-card__icon img{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.doc-card__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a1a1a;
+}
+
+.status-icon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-icon img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-text {
+  font-size: 14px;
+  color: #000;
+ 
+} 
+
+.doc-card__birth {
+  font-size: 14px;
+  color: #2a2a2a;
+  
+}
+.doc-card__birth :nth-child(1){
+    font-size: 13px;
+  color: #5b5b5b;
+}
+
+.birth-date {
+  font-weight: 600;
+}
+
+.doc-card__footer {
+  font-size: 12px;
+  color: #fff;
+  background-color: #939393;
+  overflow: hidden;
+}
+
+
+
+.doc-card__footer p {
+  animation: marquee 10s linear infinite;
+  
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.doc-card__person {
+  position: relative;
+  background: #e5e2cd;
+
+  padding-top: 12px;
+}
+
+.person-status {
+  font-size: 13px;
+  color: #5b5b5b;
+}
+
+.person-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #f29f05;
+  color: #000;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffff;
+  padding: 5px 0;
+  border-top: 1px solid #bcb8a3;
+
+}
+
+.footer__item {
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__vac{
+  border: 3px solid #000;
+  width: 20px;
+  height: 25px;
+  border-radius: 3px;
+  position: relative;
+
+
+}
+
+.footer__doc{
+  width: 20px;
+   height: 25px;
+  border-radius: 3px;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  border: 3px solid #000;
+
+}
+
+.footer__doc ::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 16px;
+  height: 1px;
+  background-color: #fff;
+  
+}
+
+
+.footer__doc ::before{
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 2px;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  
+}
+
+
+.footer__vac span{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #000;
+
+}
+
+
+.footer__item span {
+  display: block;
+  font-size: 18px;
+}
+
+
+.footer__menu{
+  width: 20px;
+ height: 25px;
+  border-radius: 3px;
+  position: relative;
+
+
+}
+
+.footer__menu span{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+
+.footer__menu::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background-color: #000;
+}
+
+.footer__menu::before{
+content: "";
+position: absolute;
+bottom: 50%;
+left: 0;
+width: 100%;
+height: 3px;
+background-color: #000;
+transform: translate(0, 50%);
+}
